@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -66,17 +68,15 @@
   
   <!--main start here-->   
 
- <main class="w">
-    <br><br>
-    <div class="c1 ">
-        
-        <div class="c2">  
-       <h1>FRESH COFFEE IN<br>THE MORNING</h1><br>
-       <p>jhodhcedfheijfejfejfkejfieufeuyugeygfegfegfge<br>
-        kjhgeiufefhekfbeifejfbkj.</p><br><br>
-        <a class="bb" href="">Get It Now</a> 
+ <main class="bg-gray-950 w-full md:w-3/4 mx-auto">
+    
+    <div class="text-xl text-white md:text-4xl flex flex-col justify-center gap-4 p-8 w-full  mx-auto h-[700px] md:h-[500px] my-8 bg-cover rounded-md  bg-no-repeat " style="background-image: url('co2.png');">
+      <h1>FRESH COFFEE IN<br>THE MORNING</h1>
+       <p>jhodhcedfheijfejfejfkejfieufeuyugeygfeg<br>fegfge
+        kjhgeiufefhekfbeifejfbkj.</p>
+        <button class="btn btn-warning w-40">Get It Now</button> 
        </div> 
-       <img class="img1" src="co2.png" alt=""> 
+        
     </div>
     
     
@@ -84,34 +84,35 @@
     
        <section>
         
-        <div class="c4">
+        <div class="flex flex-col md:flex-col lg:flex-row gap-2">
           
-               <img class="imgg" src="coffee-cup.jpg" alt="">
+               <img class="md:w-full lg:w-1/2" src="coffee-cup.jpg" alt="">
            
          
-         <div class="c3">
-           <h3 class="c32">What makes Our Coffee Special?</h3><br>
-           <p>jhhhddefefefefefefefefefefefefefefeqfefefewd<br>
-               wdwdwdwdwdwdwdwdweddyufdgwtd87eyfuiehf <br>
-               hbvfhrwufghhrknflgrkghghorhjgkejfoejfewfjo
-           </p> <br>
+         <div class="md:w-full lg:w-1/2 md:text-4xl flex flex-col justify-center gap-4 p-8 text-black bg-yellow-500">
+           <h3 class="">What makes Our Coffee Special?</h3>
+           <p>jhhhddefefefefefefefefef<br>
+               wdwdwdwdwdwdwdwdweddyu <br>
+               hbvfhrwufghhrknflgrkghgho
+           </p> 
            <p>
-               jehfhehfehfoeflehfoehfejfklehfehfefhlekfhefhl<br>
-               efguheiufhehfehfiefiuehfjiufheifhkjfhei?
-           </p> <br>
-           <a class="bb" href="">Learn More</a>
+               jehfhehfehfoeflehfoehfejfklehf<br>
+               efguheiufhehfehfiefiuehfjfi?
+           </p> 
+           <a class="btn btn-neutral bg-amber-700" href="">Learn More</a>
          </div>
         </div>
     </section>
     
     <h1 class="c31">Our <span class="span1">Menu</span></h1>
         <!--product section start-->
-        <section class="products">
+        <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0">
             <article class="product cart">
-               <div class="badge">
+               <div class="badgee">
                 <span>In Stock</span>
                     <hr>
                 <span>Discount</span>
+
                </div>
                   <img class="product-image" src="c1.jpg" alt="headphone">
                <div class="product-body">
@@ -124,7 +125,7 @@
                  <button class="btn product-button">Add To Cart</button>   
             </article>
             <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -140,7 +141,7 @@
                   <button class="btn product-button">Add To Cart</button>   
              </article>
              <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -156,7 +157,7 @@
                   <button class="btn product-button">Add To Cart</button>   
              </article>
              <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -172,7 +173,7 @@
                   <button class="btn product-button">Add To Cart</button>      
              </article>
              <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -188,7 +189,7 @@
                   <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -204,7 +205,7 @@
                   <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -220,7 +221,7 @@
                   <button class="btn product-button">Add To Cart</button>      
              </article>
              <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -236,7 +237,7 @@
                   <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -252,7 +253,7 @@
                   <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -268,7 +269,7 @@
                  <button class="btn product-button">Add To Cart</button>      
              </article>
              <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -284,7 +285,7 @@
                  <button class="btn product-button">Add To Cart</button>      
              </article>
              <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -306,7 +307,7 @@
 
      <h1 class="c31"> <span class="span1">Coffee </span>Bags</h1>
         <!--product section start-->
-        <section class="products">
+        <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0">
             <article class="product cart">
                <div class="badge">
                 <span>In Stock</span>
@@ -504,7 +505,7 @@
 
          <h1 class="c31"><span class="span1">Ice</span> Cream</h1>
          <!--product section start-->
-         <section class="products">
+         <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0">
              <article class="product cart">
                 <div class="badge">
                  <span>In Stock</span>
@@ -701,7 +702,7 @@
 
           <h1 class="c31"><span class="span1">Cheese</span> Cake</h1>
           <!--product section start-->
-          <section class="products">
+          <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0">
               <article class="product cart">
                  <div class="badge">
                   <span>In Stock</span>
@@ -837,7 +838,7 @@
 
      <!--for contact page-->
 
-     <div class="pagination">
+     <div class="pagination my-4">
        <a href="reg.html" class="pg"><i class="fa-brands fa-facebook-f fa-beat fa-2xl" style="color: #ffffff;"></i></a> 
        <a href="reg.html" class="pg"><i class="fa-brands fa-twitter fa-beat fa-2xl" style="color: #f1f2f3;"></i></a>
        <a href="reg.html" class="pg"><i class="fa-brands fa-instagram fa-beat fa-2xl" style="color: #ffffff;"></i></a>
@@ -848,8 +849,8 @@
 <!--footer start-->
  </main>
     
- <footer class="footer flex-space-around1">
-    <h1 class="c14"> Coffee <span class="span2">Shop</span> </h1>
+ <footer class="bg-black flex flex-col items-center justify-center gap-4 text-xl md:text-4xl">
+    <h1 class=""> Coffee <span class="span2">Shop</span></h1>
     <div class=""><h3>Make Your Own <span class="span2">Coffee</span> and  <span class="span2">Feel It</span></h3> </div>
     <div class="">Created by Asfaqur Rahman </div> 
     <div class="">@copyright 2023 Coda Mart. All right reserved</div>
