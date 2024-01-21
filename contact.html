@@ -49,17 +49,13 @@
            <i class="fas fa-bars" id="menu-bars"></i>  
 
         </div>    
-        <!-- Open the modal using ID.showModal() method -->
-        <button class="" onclick="my_modal_2.showModal()"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> </button>
-        <dialog id="my_modal_2" class="modal">
-          <div class="modal-box bg-amber-600">
-            <h3 class="font-bold text-lg">Hello!</h3>
-            <p class="py-4"><input type="search" placeholder="search here" class="input h-10 w-full bg-white" /></p>
-          </div>
-          <form method="dialog" class="modal-backdrop">
-            <button>close</button>
-          </form>
-        </dialog> 
+        <div class="dropdown dropdown-bottom dropdown-end">
+          <div tabindex="0" role="button" class=""><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> </div>
+          <ul tabindex="0" class="dropdown-content z-[1] -left-48 shadow  rounded w-72">
+            <li class=""><input type="search" placeholder="search here" class="input text-black h-10 w-full bg-white" /></li>
+            
+          </ul>
+        </div>
          
           <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a> 
       
