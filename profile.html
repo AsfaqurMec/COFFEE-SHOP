@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommarce project</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -48,7 +50,17 @@
              <i class="fas fa-bars" id="menu-bars"></i>  
  
           </div>    
-           <a href="search.html"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> </a> 
+          <!-- Open the modal using ID.showModal() method -->
+         <button class="" onclick="my_modal_2.showModal()"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> </button>
+         <dialog id="my_modal_2" class="modal">
+           <div class="modal-box bg-amber-600">
+             <h3 class="font-bold text-lg">Hello!</h3>
+             <p class="py-4"><input type="search" placeholder="search here" class="input h-10 w-full bg-white" /></p>
+           </div>
+           <form method="dialog" class="modal-backdrop">
+             <button>close</button>
+           </form>
+         </dialog> 
            
             <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a> 
         
@@ -62,9 +74,9 @@
   <!--upper nav end-->
    
   <main class="bbb">
-    <section class="new">
+    <section class="w-full md:w-3/4 lg:w-1/2 mt-4 text-2xl md:text-4xl text-white hover:text-black rounded-md bg-amber-600 hover:bg-white  mx-auto">
     <form action="" class="form">
-       <div class="form-control cart">
+       <div class="flex flex-col justify-center items-center text-center gap-4">
          <img class="mey" src="me.JPG" alt="me">
         <p class="pro"> Asfaqur Rahman</p>
         <p class="pro">Department Of CSE</p>
@@ -75,12 +87,12 @@
   </section>
 </main> 
 <!--footer start-->
-<footer class="footer flex-space-around1">
-  <h1 class="c14"> Coffee <span class="span2">Shop</span> </h1>
+<footer class="bg-black text-white flex flex-col items-center justify-center gap-4 text-xl md:text-4xl py-4">
+  <h1 class=""> Coffee <span class="span2">Shop</span></h1>
   <div class=""><h3>Make Your Own <span class="span2">Coffee</span> and  <span class="span2">Feel It</span></h3> </div>
   <div class="">Created by Asfaqur Rahman </div> 
   <div class="">@copyright 2023 Coda Mart. All right reserved</div>
-  </footer>
+</footer>
   </main>
 
 <script type="module" src="index.js"></script>

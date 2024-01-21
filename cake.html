@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommarce project</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -64,138 +66,138 @@
     
   <h1 class="c31">Cheese Cake</h1>
   <!--product section start-->
-  <section class="products">
-      <article class="product cart">
-         <div class="badge">
-          <span>In Stock</span>
-              <hr>
-          <span>Discount</span>
-         </div>
-            <img class="product-image" src="blueberry.jpg" alt="headphone">
-         <div class="product-body">
-             <h4>Blueberry cheese cake</h2>
-           <p class="product-detail">
-              <i class="fa-solid fa-star"></i>
-              4.5/5(50) 50 Sold <br>
-              BDT: 100
-           </p>
-           <button class="btn product-button">Add To Cart</button>   
-      </article>
-      <article class="product cart">
-          <div class="badge">
-           <span>In Stock</span>
-               <hr>
-           <span>Discount</span>
-          </div>
-             <img class="product-image" src="vegan-black-forest-cake.jpg" alt="Apple Watch">
-          <div class="product-body">
-              <h4>Vegan Black Forest</h2>
-            <p class="product-detail">
-               <i class="fa-solid fa-star"></i>
-               4.3/5(50) 06 Sold <br>
-               BDT: 550
-            </p>
-            <button class="btn product-button">Add To Cart</button>   
-       </article>
-       <article class="product cart">
-          <div class="badge">
-           <span>In Stock</span>
-               <hr>
-           <span>Discount</span>
-          </div>
-             <img class="product-image" src="lemon-cheesecake-2.jpg" alt="Apple phone">
-          <div class="product-body">
-              <h4>Lemon Cheese Cake </h2>
-            <p class="product-detail">
-               <i class="fa-solid fa-star"></i>
-               4.8/5(100) 10 Sold <br>
-               BDT: 450
-            </p>
-            <button class="btn product-button">Add To Cart</button>   
-       </article>
-       <article class="product cart">
-          <div class="badge">
-           <span>In Stock</span>
-               <hr>
-           <span>Discount</span>
-          </div>
-             <img class="product-image" src="keto.jpg" alt="macbook">
-          <div class="product-body">
-              <h4>Keto Cheese Cake</h2>
-            <p class="product-detail">
-               <i class="fa-solid fa-star"></i>
-               4.7/5(10) 15 Sold <br>
-               BDT: 45
-            </p>
-            <button class="btn product-button">Add To Cart</button>      
-       </article>
-       <article class="product cart">
-           <div class="badge">
-            <span>In Stock</span>
-                <hr>
-            <span>Discount</span>
-           </div>
-              <img class="product-image" src="chocolate.jpg" alt="Galaxy S23 ultra">
-           <div class="product-body">
-               <h4>Chocolate Cheese Cake</h2>
-             <p class="product-detail">
-                <i class="fa-solid fa-star"></i>
-                4.6/5(50) 55 Sold <br>
-                BDT: 90
-             </p>
-            <button class="btn product-button">Add To Cart</button>      
-        </article>
-        <article class="product cart">
-           <div class="badge">
-            <span>In Stock</span>
-                <hr>
-            <span>Discount</span>
-           </div>
-              <img class="product-image" src="No-Bake-Twix-Cheesecake-4.jpeg" alt="huawei p30">
-           <div class="product-body">
-               <h4>Twix Cheese Cake</h4>
-             <p class="product-detail">
-                <i class="fa-solid fa-star"></i>
-                4.5/5(15) 20 Sold <br>
-                BDT: 120
-             </p>
-            <button class="btn product-button">Add To Cart</button>      
-        </article>
-        <article class="product cart">
-          <div class="badge">
-           <span>In Stock</span>
-               <hr>
-           <span>Discount</span>
-          </div>
-             <img class="product-image" src="Square-Slice-of-Cheesecake-with-Fork.jpg" alt="pixel 8pro">
-          <div class="product-body">
-              <h4>Resberry Cheese Cake </h2>
-            <p class="product-detail">
-               <i class="fa-solid fa-star"></i>
-               4.5/5(10) 14 Sold <br>
-               BDT: 110
-            </p>
-            <button class="btn product-button">Add To Cart</button>      
-       </article>
-       <article class="product cart">
-           <div class="badge">
-            <span>In Stock</span>
-                <hr>
-            <span>Discount</span>
-           </div>
-              <img class="product-image" src="webimage-A2F3E496-599D-472B-BB98713B5C255914 - Copy (2).png" alt="">
-           <div class="product-body">
-               <h4>Caramel Cheese Cake</h2>
-             <p class="product-detail">
-                <i class="fa-solid fa-star"></i>
-                4.6/5(15) 25 Sold <br>
-                BDT: 80
-             </p>
-            <button class="btn product-button">Add To Cart</button>      
-        </article>
-        
-       
-   </section>
+  <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0 text-2xl">
+   <article class="product cart">
+      <div class="badgee">
+       <span>In Stock</span>
+           <hr>
+       <span>Discount</span>
+      </div>
+         <img class="product-image" src="blueberry.jpg" alt="headphone">
+      <div class="product-body">
+          <h4>Blueberry cheese cake</h2>
+        <p class="product-detail">
+           <i class="fa-solid fa-star"></i>
+           4.5/5(50) 50 Sold <br>
+           BDT: 100
+        </p>
+        <button class="btn product-button">Add To Cart</button>   
+   </article>
+   <article class="product cart">
+       <div class="badgee">
+        <span>In Stock</span>
+            <hr>
+        <span>Discount</span>
+       </div>
+          <img class="product-image" src="vegan-black-forest-cake.jpg" alt="Apple Watch">
+       <div class="product-body">
+           <h4>Vegan Black Forest</h2>
+         <p class="product-detail">
+            <i class="fa-solid fa-star"></i>
+            4.3/5(50) 06 Sold <br>
+            BDT: 550
+         </p>
+         <button class="btn product-button">Add To Cart</button>   
+    </article>
+    <article class="product cart">
+       <div class="badgee">
+        <span>In Stock</span>
+            <hr>
+        <span>Discount</span>
+       </div>
+          <img class="product-image" src="lemon-cheesecake-2.jpg" alt="Apple phone">
+       <div class="product-body">
+           <h4>Lemon Cheese Cake </h2>
+         <p class="product-detail">
+            <i class="fa-solid fa-star"></i>
+            4.8/5(100) 10 Sold <br>
+            BDT: 450
+         </p>
+         <button class="btn product-button">Add To Cart</button>   
+    </article>
+    <article class="product cart">
+       <div class="badgee">
+        <span>In Stock</span>
+            <hr>
+        <span>Discount</span>
+       </div>
+          <img class="product-image" src="keto.jpg" alt="macbook">
+       <div class="product-body">
+           <h4>Keto Cheese Cake</h2>
+         <p class="product-detail">
+            <i class="fa-solid fa-star"></i>
+            4.7/5(10) 15 Sold <br>
+            BDT: 45
+         </p>
+         <button class="btn product-button">Add To Cart</button>      
+    </article>
+    <article class="product cart">
+        <div class="badgee">
+         <span>In Stock</span>
+             <hr>
+         <span>Discount</span>
+        </div>
+           <img class="product-image" src="chocolate.jpg" alt="Galaxy S23 ultra">
+        <div class="product-body">
+            <h4>Chocolate Cheese Cake</h2>
+          <p class="product-detail">
+             <i class="fa-solid fa-star"></i>
+             4.6/5(50) 55 Sold <br>
+             BDT: 90
+          </p>
+         <button class="btn product-button">Add To Cart</button>      
+     </article>
+     <article class="product cart">
+        <div class="badgee">
+         <span>In Stock</span>
+             <hr>
+         <span>Discount</span>
+        </div>
+           <img class="product-image" src="No-Bake-Twix-Cheesecake-4.jpeg" alt="huawei p30">
+        <div class="product-body">
+            <h4>Twix Cheese Cake</h4>
+          <p class="product-detail">
+             <i class="fa-solid fa-star"></i>
+             4.5/5(15) 20 Sold <br>
+             BDT: 120
+          </p>
+         <button class="btn product-button">Add To Cart</button>      
+     </article>
+     <article class="product cart">
+       <div class="badgee">
+        <span>In Stock</span>
+            <hr>
+        <span>Discount</span>
+       </div>
+          <img class="product-image" src="Square-Slice-of-Cheesecake-with-Fork.jpg" alt="pixel 8pro">
+       <div class="product-body">
+           <h4>Resberry Cheese Cake </h2>
+         <p class="product-detail">
+            <i class="fa-solid fa-star"></i>
+            4.5/5(10) 14 Sold <br>
+            BDT: 110
+         </p>
+         <button class="btn product-button">Add To Cart</button>      
+    </article>
+    <article class="product cart">
+        <div class="badgee">
+         <span>In Stock</span>
+             <hr>
+         <span>Discount</span>
+        </div>
+           <img class="product-image" src="webimage-A2F3E496-599D-472B-BB98713B5C255914 - Copy (2).png" alt="honor magic">
+        <div class="product-body">
+            <h4>Caramel Cheese Cake</h2>
+          <p class="product-detail">
+             <i class="fa-solid fa-star"></i>
+             4.6/5(15) 25 Sold <br>
+             BDT: 80
+          </p>
+         <button class="btn product-button">Add To Cart</button>      
+     </article>
+     
+    
+</section>
 
 <!--product section end-->
     

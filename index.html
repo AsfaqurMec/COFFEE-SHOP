@@ -49,7 +49,17 @@
             <i class="fas fa-bars" id="menu-bars"></i>  
 
          </div>    
-          <a href="search.html"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> </a> 
+         <!-- Open the modal using ID.showModal() method -->
+         <button class="" onclick="my_modal_2.showModal()"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> </button>
+         <dialog id="my_modal_2" class="modal">
+           <div class="modal-box bg-amber-600">
+             <h3 class="font-bold text-lg">Hello!</h3>
+             <p class="py-4"><input type="search" placeholder="search here" class="input h-10 w-full bg-white" /></p>
+           </div>
+           <form method="dialog" class="modal-backdrop">
+             <button>close</button>
+           </form>
+         </dialog>  
           
            <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a> 
        
@@ -70,11 +80,11 @@
 
  <main class="bg-gray-950 w-full md:w-3/4 mx-auto">
     
-    <div class="text-xl text-white md:text-4xl flex flex-col justify-center gap-4 p-8 w-full  mx-auto h-[700px] md:h-[500px] my-8 bg-cover rounded-md  bg-no-repeat " style="background-image: url('co2.png');">
-      <h1>FRESH COFFEE IN<br>THE MORNING</h1>
-       <p>jhodhcedfheijfejfejfkejfieufeuyugeygfeg<br>fegfge
-        kjhgeiufefhekfbeifejfbkj.</p>
-        <button class="btn btn-warning w-40">Get It Now</button> 
+    <div class=" text-white  font-bold flex flex-col justify-center gap-4 p-8 w-full  mx-auto h-[400px] md:h-[500px] my-8 bg-cover  bg-center rounded-md  bg-no-repeat " style="background-image: url('co2.png');">
+      <h1 class="text-3xl md:text-5xl">FRESH COFFEE IN<br>THE MORNING</h1>
+       <p class="text-2xl md:text-3xl">Start your day by having our cofee<br>and 
+        some snacks.</p>
+        <button class="btn btn-warning w-40 font-medium text-2xl">Get It Now</button> 
        </div> 
         
     </div>
@@ -89,24 +99,21 @@
                <img class="md:w-full lg:w-1/2" src="coffee-cup.jpg" alt="">
            
          
-         <div class="md:w-full lg:w-1/2 md:text-4xl flex flex-col justify-center gap-4 p-8 text-black bg-yellow-500">
+         <div class="md:w-full lg:w-1/2 text-2xl md:text-3xl font-medium flex flex-col justify-center gap-4 p-8 text-black bg-amber-400">
            <h3 class="">What makes Our Coffee Special?</h3>
-           <p>jhhhddefefefefefefefefef<br>
-               wdwdwdwdwdwdwdwdweddyu <br>
-               hbvfhrwufghhrknflgrkghgho
+           <p>We use aurthentic coffee from <strong>Brazil</strong>.<br>
+               We maintain our quality & provide <br>
+               good service to the customers.
            </p> 
-           <p>
-               jehfhehfehfoeflehfoehfejfklehf<br>
-               efguheiufhehfehfiefiuehfjfi?
-           </p> 
-           <a class="btn btn-neutral bg-amber-700" href="">Learn More</a>
+           
+           <a class="btn btn-neutral bg-amber-800" href="">Learn More</a>
          </div>
         </div>
     </section>
     
     <h1 class="c31">Our <span class="span1">Menu</span></h1>
         <!--product section start-->
-        <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0">
+        <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0 text-2xl">
             <article class="product cart">
                <div class="badgee">
                 <span>In Stock</span>
@@ -307,9 +314,9 @@
 
      <h1 class="c31"> <span class="span1">Coffee </span>Bags</h1>
         <!--product section start-->
-        <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0">
+        <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0 text-2xl">
             <article class="product cart">
-               <div class="badge">
+               <div class="badgee">
                 <span>In Stock</span>
                     <hr>
                 <span>Discount</span>
@@ -325,7 +332,7 @@
                  <button class="btn product-button">Add To Cart</button>   
             </article>
             <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -341,7 +348,7 @@
                   <button class="btn product-button">Add To Cart</button>   
              </article>
              <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -357,7 +364,7 @@
                   <button class="btn product-button">Add To Cart</button>   
              </article>
              <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -373,7 +380,7 @@
                   <button class="btn product-button">Add To Cart</button>      
              </article>
              <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -389,7 +396,7 @@
                   <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -405,7 +412,7 @@
                   <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -421,7 +428,7 @@
                   <button class="btn product-button">Add To Cart</button>      
              </article>
              <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -437,7 +444,7 @@
                   <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -453,7 +460,7 @@
                   <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -469,7 +476,7 @@
                  <button class="btn product-button">Add To Cart</button>      
              </article>
              <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -485,7 +492,7 @@
                  <button class="btn product-button">Add To Cart</button>      
              </article>
              <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -505,9 +512,9 @@
 
          <h1 class="c31"><span class="span1">Ice</span> Cream</h1>
          <!--product section start-->
-         <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0">
+         <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0 text-2xl">
              <article class="product cart">
-                <div class="badge">
+                <div class="badgee">
                  <span>In Stock</span>
                      <hr>
                  <span>Discount</span>
@@ -523,7 +530,7 @@
                   <button class="btn product-button">Add To Cart</button>   
              </article>
              <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -539,7 +546,7 @@
                    <button class="btn product-button">Add To Cart</button>   
               </article>
               <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -555,7 +562,7 @@
                    <button class="btn product-button">Add To Cart</button>   
               </article>
               <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -571,7 +578,7 @@
                    <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                  <div class="badge">
+                  <div class="badgee">
                    <span>In Stock</span>
                        <hr>
                    <span>Discount</span>
@@ -587,7 +594,7 @@
                    <button class="btn product-button">Add To Cart</button>      
                </article>
                <article class="product cart">
-                  <div class="badge">
+                  <div class="badgee">
                    <span>In Stock</span>
                        <hr>
                    <span>Discount</span>
@@ -603,7 +610,7 @@
                    <button class="btn product-button">Add To Cart</button>      
                </article>
                <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -619,7 +626,7 @@
                    <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                  <div class="badge">
+                  <div class="badgee">
                    <span>In Stock</span>
                        <hr>
                    <span>Discount</span>
@@ -635,7 +642,7 @@
                    <button class="btn product-button">Add To Cart</button>      
                </article>
                <article class="product cart">
-                  <div class="badge">
+                  <div class="badgee">
                    <span>In Stock</span>
                        <hr>
                    <span>Discount</span>
@@ -651,7 +658,7 @@
                    <button class="btn product-button">Add To Cart</button>      
                </article>
                <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -667,7 +674,7 @@
                   <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -683,7 +690,7 @@
                   <button class="btn product-button">Add To Cart</button>      
               </article>
               <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -702,9 +709,9 @@
 
           <h1 class="c31"><span class="span1">Cheese</span> Cake</h1>
           <!--product section start-->
-          <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0">
+          <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-0 text-2xl">
               <article class="product cart">
-                 <div class="badge">
+                 <div class="badgee">
                   <span>In Stock</span>
                       <hr>
                   <span>Discount</span>
@@ -720,7 +727,7 @@
                    <button class="btn product-button">Add To Cart</button>   
               </article>
               <article class="product cart">
-                  <div class="badge">
+                  <div class="badgee">
                    <span>In Stock</span>
                        <hr>
                    <span>Discount</span>
@@ -736,7 +743,7 @@
                     <button class="btn product-button">Add To Cart</button>   
                </article>
                <article class="product cart">
-                  <div class="badge">
+                  <div class="badgee">
                    <span>In Stock</span>
                        <hr>
                    <span>Discount</span>
@@ -752,7 +759,7 @@
                     <button class="btn product-button">Add To Cart</button>   
                </article>
                <article class="product cart">
-                  <div class="badge">
+                  <div class="badgee">
                    <span>In Stock</span>
                        <hr>
                    <span>Discount</span>
@@ -768,7 +775,7 @@
                     <button class="btn product-button">Add To Cart</button>      
                </article>
                <article class="product cart">
-                   <div class="badge">
+                   <div class="badgee">
                     <span>In Stock</span>
                         <hr>
                     <span>Discount</span>
@@ -784,7 +791,7 @@
                     <button class="btn product-button">Add To Cart</button>      
                 </article>
                 <article class="product cart">
-                   <div class="badge">
+                   <div class="badgee">
                     <span>In Stock</span>
                         <hr>
                     <span>Discount</span>
@@ -800,7 +807,7 @@
                     <button class="btn product-button">Add To Cart</button>      
                 </article>
                 <article class="product cart">
-                  <div class="badge">
+                  <div class="badgee">
                    <span>In Stock</span>
                        <hr>
                    <span>Discount</span>
@@ -816,7 +823,7 @@
                     <button class="btn product-button">Add To Cart</button>      
                </article>
                <article class="product cart">
-                   <div class="badge">
+                   <div class="badgee">
                     <span>In Stock</span>
                         <hr>
                     <span>Discount</span>
@@ -849,7 +856,7 @@
 <!--footer start-->
  </main>
     
- <footer class="bg-black flex flex-col items-center justify-center gap-4 text-xl md:text-4xl">
+ <footer class="bg-black text-white flex flex-col items-center justify-center gap-4 text-xl md:text-4xl py-4">
     <h1 class=""> Coffee <span class="span2">Shop</span></h1>
     <div class=""><h3>Make Your Own <span class="span2">Coffee</span> and  <span class="span2">Feel It</span></h3> </div>
     <div class="">Created by Asfaqur Rahman </div> 
